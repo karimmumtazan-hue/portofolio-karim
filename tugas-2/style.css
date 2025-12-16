@@ -1,0 +1,113 @@
+/* ====== Reset & Dasar ====== */
+body {
+  font-family: Arial, sans-serif;
+  background: #111827; /* abu gelap */
+  color: #cfd2d7;       /* abu terang untuk teks */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: #60a5fa; /* biru terang */
+  margin-top: 0;
+}
+
+a {
+  color: #93c5fd; /* biru soft */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #3b82f6; /* biru lebih terang */
+  text-decoration: underline;
+}
+
+/* ====== Container Umum ====== */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.box {
+  background: #1f2937; /* abu gelap */
+  border: 1px solid #374151; /* abu kehitaman */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  padding-left: 10px;
+  border-left: 4px solid #22c55e; /* aksen hijau */
+  margin-bottom: 10px;
+  color: #a7f3d0; /* hijau pastel */
+}
+
+/* ====== Gambar ====== */
+.photo {
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #374151;
+  margin: 10px 0;
+  border: 2px solid #3b82f6;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.15) rotate(5deg);  /* membesar 15% + miring 5 derajat */
+  border-color: #22c55e;                /* border hijau saat hover */
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5); /* glow hijau */
+}
+
+/* ====== Galeri ====== */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.galeri img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #3b82f6;
+  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.galeri img:hover {
+  transform: scale(1.15) rotate(5deg);  /* membesar 15% + miring 5 derajat */
+  border-color: #22c55e;                /* border hijau saat hover */
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.5); /* glow hijau */
+}
+
+/* ====== Footer / Navigasi ====== */
+.nav-link {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #1e40af;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  max-width: 250px;
+}
+
